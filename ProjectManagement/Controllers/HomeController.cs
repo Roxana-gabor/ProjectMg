@@ -9,10 +9,24 @@ namespace ProjectManagement.Controllers
 {
     public class HomeController : Controller
     {
+        public double Media()
+        {
+            var list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int sum = 0;
+            foreach (int x in list)
+                sum += x;
+            return sum / list.Count;
+        }
         public ActionResult Index()
         {
             return View();
         }
+
+        public ActionResult HelloWorld()
+        {
+            return Content("Hello World!");
+        }
+
 
         public ActionResult About()
         {
@@ -26,7 +40,7 @@ namespace ProjectManagement.Controllers
             return View(model);
 
 
-            return View();
+           // return View();
         }
 
         public ActionResult Contact()
