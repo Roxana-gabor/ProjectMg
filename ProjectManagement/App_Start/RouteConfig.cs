@@ -25,6 +25,12 @@ namespace ProjectManagement
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
+           // routes.MapRoute(
+           //    name: "Google",
+           //    url: "",
+           //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+           //);
+
             //routes.MapRoute(
             //    name: "ProjectAlfa",
             //    url: "Project/{alpha}",
